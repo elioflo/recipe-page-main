@@ -23,17 +23,11 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
       :root {
         --primary-nutmeg: hsl(14, 45%, 36%);
         --primary-dark-raspberry: hsl(332, 51%, 32%);
-
+        
+        --link: hsl(228, 45%, 44%);
         --neutral-white: hsl(0, 0%, 100%);
         --neutral-rose-white: hsl(330, 100%, 98%);
         --neutral-eggshell: hsl(30, 54%, 90%);
@@ -138,6 +132,82 @@
 
       table {
         width: 100%;
+        border-collapse: collapse;
+      }
+
+      .value {
+        font-weight: 700;
+        color: var(--primary-nutmeg);
+      }
+
+      .bottom_border td {
+        border-bottom: solid .0625rem var(--neutral-light-grey);
+      }
+
+      td {
+        padding: .5rem 0;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+        padding-left: .5rem;
+      }
+      
+      .small-padding {
+        padding-left: 2rem;
+      }
+
+      footer {
+        /* font-size: .875rem; */
+        font-size: .75rem;
+        text-align: center;
+        padding: .5rem 0;
+        margin-top: 2rem;
+        background-color: var(--neutral-white);
+      }
+
+      footer a {
+        text-decoration: none;
+        color: var(--primary-nutmeg);
+        font-weight: 700;
+      }
+
+      main {
+        width: 100%;
+        max-width: 43.5rem;
+        background-color: var(--neutral-white);
+        border-radius: 1rem;
+      }
+
+      @media (width >= 43.5rem) {
+        .container {
+          background-color: var(--neutral-eggshell);
+          display: grid;
+          grid-template-rows: 1fr auto;
+          place-content: center;
+        }
+
+        footer {
+          width: fit-content;
+          padding: .5rem 1rem;
+          font-size: 0.875rem;
+          border-radius: .5rem;
+          margin: 1.25rem auto;
+          box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+        }
+
+        main {
+          padding-top: 2rem;
+          padding-bottom: 2rem;
+          margin-top: 1rem;
+          box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+        }
+
+        img {
+          display: block;
+          width: calc(100% - 4rem);
+          margin: auto;
+          border-radius: .5rem;
+        }
       }
     </style>
   </head>
@@ -211,10 +281,10 @@
               additional fillings.
             </p>
             <table>
-              <tr class="border-bottom"><td>Calories</td> <td>277kcal</td></tr> 
-              <tr class="border-bottom"><td>Carbs</td> <td>0g</td></tr> 
-              <tr class="border-bottom"><td>Protein</td> <td>20g</td></tr> 
-              <tr class="border-bottom"><td>Fat</td> <td>22g</td></tr>
+              <tr class="bottom_border"><td class="small-padding">Calories</td> <td class="value">277kcal</td></tr> 
+              <tr class="bottom_border"><td class="small-padding">Carbs</td> <td class="value">0g</td></tr> 
+              <tr class="bottom_border"><td class="small-padding">Protein</td> <td class="value">20g</td></tr> 
+              <tr><td class="small-padding">Fat</td> <td class="value">22g</td></tr>
             </table>
           </section>
         </div>
@@ -223,7 +293,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Elio Flores</a>.
+        >. Coded by <a href="#" target="_blank">Elio Flores</a>.
       </footer>
     </div>
   </body>
