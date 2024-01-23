@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Recipe page</title>
+    <title>Recipe page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +26,7 @@
       :root {
         --primary-nutmeg: hsl(14, 45%, 36%);
         --primary-dark-raspberry: hsl(332, 51%, 32%);
-        
+
         --link: hsl(228, 45%, 44%);
         --neutral-white: hsl(0, 0%, 100%);
         --neutral-rose-white: hsl(330, 100%, 98%);
@@ -54,6 +54,7 @@
       h1 {
         color: var(--neutral-dark-charcoal);
         font-size: 2.25rem;
+        font-weight: 400;
       }
 
       h2 {
@@ -88,7 +89,7 @@
 
       .dot_bullet li {
         position: relative;
-        margin: .5rem 0;
+        margin: 0.5rem 0;
       }
 
       .dot_bullet li::before {
@@ -97,7 +98,7 @@
         color: var(--bullet-color);
         position: absolute;
         left: -2rem;
-        top: calc(50% - .75rem);
+        top: calc(50% - 0.75rem);
         transform: translateY(-50%);
       }
 
@@ -111,7 +112,7 @@
 
       .bottom_border {
         padding-bottom: 1.5rem;
-        border-bottom: solid .0625rem var(--neutral-light-grey);
+        border-bottom: solid 0.0625rem var(--neutral-light-grey);
       }
 
       ol {
@@ -122,9 +123,9 @@
 
       ol li {
         padding-left: 1rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
-      
+
       ol li::marker {
         color: var(--primary-nutmeg);
         font-weight: 700;
@@ -141,26 +142,26 @@
       }
 
       .bottom_border td {
-        border-bottom: solid .0625rem var(--neutral-light-grey);
+        border-bottom: solid 0.0625rem var(--neutral-light-grey);
       }
 
       td {
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         box-sizing: border-box;
         display: inline-block;
         width: 50%;
-        padding-left: .5rem;
+        padding-left: 0.5rem;
       }
-      
+
       .small-padding {
         padding-left: 2rem;
       }
 
       footer {
         /* font-size: .875rem; */
-        font-size: .75rem;
+        font-size: 0.75rem;
         text-align: center;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         margin-top: 2rem;
         background-color: var(--neutral-white);
       }
@@ -188,25 +189,29 @@
 
         footer {
           width: fit-content;
-          padding: .5rem 1rem;
+          padding: 0.5rem 1rem;
           font-size: 0.875rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           margin: 1.25rem auto;
-          box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         }
 
         main {
           padding-top: 2rem;
           padding-bottom: 2rem;
           margin-top: 1rem;
-          box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+          box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
         }
 
         img {
           display: block;
           width: calc(100% - 4rem);
           margin: auto;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
         }
       }
     </style>
@@ -214,10 +219,10 @@
   <body>
     <div class="container">
       <main>
-        <img src="./assets/images/image-omelette.jpeg" alt="" />
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette" />
         <div style="padding: 0 2rem">
           <h1>Simple Omelette Recipe</h1>
-          <p style="line-height: 1.5;">
+          <p style="line-height: 1.5">
             An easy and quick dish, perfect for any meal. This classic omelette
             combines beaten eggs cooked to perfection, optionally filled with
             your choice of cheese, vegetables, or meats.
@@ -246,45 +251,58 @@
             <h2>Instructions</h2>
             <ol>
               <li>
-                <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and
-                pepper until they are well mixed. You can add a tablespoon of
-                water or milk for a fluffier texture.
+                <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
+                pinch of salt and pepper until they are well mixed. You can add
+                a tablespoon of water or milk for a fluffier texture.
               </li>
               <li>
-                <strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and
-                add butter or oil.
+                <strong>Heat the pan:</strong> Place a non-stick frying pan over
+                medium heat and add butter or oil.
               </li>
               <li>
-                <strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour
-                in the eggs. Tilt the pan to ensure the eggs evenly coat the
-                surface.
+                <strong>Cook the omelette:</strong> Once the butter is melted
+                and bubbling, pour in the eggs. Tilt the pan to ensure the eggs
+                evenly coat the surface.
               </li>
               <li>
-                <strong>Add fillings (optional):</strong> When the eggs begin to set at the edges
-                but are still slightly runny in the middle, sprinkle your chosen
-                fillings over one half of the omelette.
+                <strong>Add fillings (optional):</strong> When the eggs begin to
+                set at the edges but are still slightly runny in the middle,
+                sprinkle your chosen fillings over one half of the omelette.
               </li>
               <li>
-                <strong>Fold and serve:</strong> As the omelette continues to cook, carefully
-                lift one edge and fold it over the fillings. Let it cook for
-                another minute, then slide it onto a plate.
+                <strong>Fold and serve:</strong> As the omelette continues to
+                cook, carefully lift one edge and fold it over the fillings. Let
+                it cook for another minute, then slide it onto a plate.
               </li>
               <li>
-                <strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.
+                <strong>Enjoy:</strong> Serve hot, with additional salt and
+                pepper if needed.
               </li>
             </ol>
           </section>
           <section>
             <h2>Nutrition</h2>
-            <p style="padding-right: .25rem; line-height: 1.5;">
+            <p style="padding-right: 0.25rem; line-height: 1.5">
               The table below shows nutritional values per serving without the
               additional fillings.
             </p>
             <table>
-              <tr class="bottom_border"><td class="small-padding">Calories</td> <td class="value">277kcal</td></tr> 
-              <tr class="bottom_border"><td class="small-padding">Carbs</td> <td class="value">0g</td></tr> 
-              <tr class="bottom_border"><td class="small-padding">Protein</td> <td class="value">20g</td></tr> 
-              <tr><td class="small-padding">Fat</td> <td class="value">22g</td></tr>
+              <tr class="bottom_border">
+                <td class="small-padding">Calories</td>
+                <td class="value">277kcal</td>
+              </tr>
+              <tr class="bottom_border">
+                <td class="small-padding">Carbs</td>
+                <td class="value">0g</td>
+              </tr>
+              <tr class="bottom_border">
+                <td class="small-padding">Protein</td>
+                <td class="value">20g</td>
+              </tr>
+              <tr>
+                <td class="small-padding">Fat</td>
+                <td class="value">22g</td>
+              </tr>
             </table>
           </section>
         </div>
@@ -293,7 +311,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#" target="_blank">Elio Flores</a>.
+        >. Coded by <a href="https://elioflo.github.io/elioflo/" target="_blank">Elio Flores</a>.
       </footer>
     </div>
   </body>
